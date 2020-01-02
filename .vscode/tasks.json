@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ffmpeg: out1 to .mp4",
+            "type": "shell",
+            "command": "ffmpeg",
+            "args": [
+                "-i", "out1/%d.png",
+                "-r", "25",
+                "-vb", "20M",
+                "-vcodec", "libx264",
+                "-pix_fmt", "yuv420p",
+                "-crf", "25",
+                "animation.mp4"
+            ]
+        }
+    ]
+}
