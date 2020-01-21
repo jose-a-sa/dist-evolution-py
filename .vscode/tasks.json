@@ -8,7 +8,7 @@
             "type": "shell",
             "command": "ffmpeg",
             "args": [
-                "-i", "out1/%d.png",
+                "-i", "img/%d.png",
                 "-r", "25",
                 "-vb", "20M",
                 "-vcodec", "libx264",

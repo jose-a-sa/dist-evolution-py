@@ -67,7 +67,7 @@ class DiscreteEvolution:
 
     def save_distplot(self, i=-1, fmt="{}.png"):
         c = sns.color_palette(None, 7)
-        fig = plt.figure(figsize=(6, 4))
+        fig = plt.figure(figsize=(8, 6))
         plt.axes(xlim=(0, 120))
         sns.distplot(self.get_state(i), bins=20, kde=False, fit=stats.pareto,
                      fit_kws={"label": "Pareto", "color": c[0]})
